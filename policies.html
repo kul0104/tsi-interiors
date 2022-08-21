@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="master.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>TSI interiors</title>
+<style>
+    #logo {
+        width: 170px;
+        height: 170px
+    }
+    
+    #mynavbar {
+        font-size: 1.1rem;
+        background-color: white;
+        min-height: 40px;
+        height: 80px;
+        padding-left: 30px;
+        padding-right: 30px;
+        box-shadow: 2px 1px 5px #b8b8b8;
+    }
+    
+    #mynavbar .nav-item {
+        margin-left: 0.7rem;
+    }
+    
+    #mynavbar .nav-link {
+        color: black;
+    }
+    
+    .c-color {
+        transition: all 0.3s ease;
+    }
+    
+    .c-color:hover {
+        color: rgb(75, 198, 255);
+        text-decoration: none;
+    }
+    
+    #mynavbar .nav-link {
+        transition: 0.3s;
+    }
+    
+    #mynavbar .nav-link:hover {
+        color: rgb(75, 198, 255);
+    }
+    
+    #mynavbar .navbar-nav {
+        height: auto;
+    }
+    
+    .dropdown:hover {
+        color: rgb(75, 198, 255);
+    }
+    
+    .d-img {
+        border-radius: 4%;
+        width: 200px;
+        height: 113px;
+    }
+    
+    #offering>.dropdown-menu {
+        visibility: hidden;
+        opacity: 0;
+        display: flex;
+        border-radius: 0;
+        position: absolute;
+        width: 470px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    #offering:hover>.dropdown-menu {
+        visibility: visible;
+        opacity: 1;
+        transition-duration: 0.4s;
+        transition-property: all;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0.1;
+    }
+    
+    #looks>.dropdown-menu {
+        visibility: hidden;
+        opacity: 0;
+        display: flex;
+        border-radius: 0;
+        position: absolute;
+        width: 1128px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    #looks:hover>.dropdown-menu {
+        visibility: visible;
+        opacity: 1;
+        transition-duration: 0.4s;
+        transition-property: all;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0.1;
+    }
+    
+    #dm>.dropdown-menu {
+        visibility: hidden;
+        opacity: 0;
+        display: flex;
+        border-radius: 0;
+        position: absolute;
+        justify-content: start;
+        width: 260px;
+        font-size: 1.1rem;
+    }
+    
+    #dm:hover>.dropdown-menu {
+        visibility: visible;
+        opacity: 1;
+        transition-duration: 0.4s;
+        transition-property: all;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0.1;
+    }
+    
+    .ditem:hover {
+        background-color: white;
+        border-left: 4px solid rgb(75, 198, 255);
+        ;
+    }
+    
+    .dropdown-items {
+        padding: 20px;
+    }
+    
+    .but {
+        border-radius: 24px;
+        color: white;
+        padding: 9px 36px;
+        font-size: 13px;
+        font-weight: 600;
+        background-color: rgb(75, 198, 255);
+        outline: none;
+    }
+    
+    #navbarDropdown {
+        padding-top: 28px;
+        transition: 0.3s;
+    }
+
+    .left{
+    position: absolute;
+    left: 10px;
+}
+.right {
+    position: absolute;
+    right: 10px;
+    width: 300px;
+    padding: 10px;
+  }
+  .center {
+
+    position: relative;
+    margin-left: 40%;
+    width: 300px;
+    padding: 50px;
+  }
+  
+  .red{
+    color: #eb595f;
+  }
+</style>
+  </head>
+  <body>
+    
+    <nav id="mynavbar"class="navbar  navbar-light fixed-top navbar-expand-md  py-0 sticky position:sticky">
+    <a href="https://thoughtsstream.com/" class="navbar-brand"> <img id="logo" src="tssi.png" width="30dp" alt="Thoughtsstream Innovations"></a>
+    <button aria-label="toggle-navbar" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navlinks" name="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse h-100 align-items-center" id="navlinks">
+      <ul class="navbar-nav w-100 h-100 align-items-center ml-2">
+        <li id="looks" class="nav-item dropdown h-100  " >
+           <a class="nav-link  h-100" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Design Ideas
+          </a>
+         
+
+        </li>
+        <li class="nav-item " >
+          <a href="howitworks.html" class="nav-link">How it works</a>
+        </li>
+        <li id="offering" class="nav-item dropdown h-100 " >
+          <a class="nav-link  h-100   " href="offering.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Offering
+          </a>
+         
+
+         
+
+        </li>
+        <li class="nav-item ">
+          <a href="tsihomes.html" class="nav-link">TSI Homes</a>
+        </li >
+        <li id="dm" class="nav-item dropdown h-100  ">
+      <a class="nav-link dropdown-toggle h-100   " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        More
+      </a>
+      <div class="dropdown-menu mt-0 flex-column border-0 sub-menu"  aria-labelledby="navbarDropdown">
+        <a class="dropdown-item mt-4 ditem" href="visitus.html">Visit us</a>
+        <a class="dropdown-item mt-4  ditem" href="aboutus.html">About us</a>
+        <a class="dropdown-item mt-4  ditem" href="contact.html">Contact us</a>
+        <a class="dropdown-item mt-4  ditem" href="#">Policies</a>
+
+
+      </div>
+    </li>
+        <li class="nav-item ml-5 ">
+          <a href="form.html">
+            <button type="button" class="btn but" name="button"> CONSULT ONLINE NOW</button>
+          </a>
+        </li >
+        
+      </ul>
+      
+    </div>
+
+
+  </nav>
+  <div class="container">
+    <img src="HIW_desktop_banner_v1_1.webp" class="img-banner" alt="About Us Banner" style="width: 100%; height: 100%;">
+    
+ 
+  </div>
+ 
+
+</div>
+<!-- <div aria-label="breadcrumb">
+<ol class="breadcrumb align-center">
+  <li class="breadcrumb-item"><a href="#">Home</a></li>
+  <li class="breadcrumb-item active" aria-current="page" style="color: red";>Policies</li>
+</ol>
+</div> -->
+<section>
+<h1 class="text-center " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Policies</h1>
+<p class="text-center" style="size: 40px;">Get All Information you need</p>
+</section>
+<!-- <div class="left">
+<ul>
+<img src="Policies/getting_started_v1_1.webp" style="width: 100px; height:auto; text-align: center;"  alt="">
+<h3>Getting Started</h3>
+<li>Getting Started</li>
+</ul>
+</div>
+<div class="center">
+<ul>
+<img src="Policies/designing_with_livspace_v1_1.webp" style="width: 100px; height:auto" alt="">
+<h4>Designing with TSI</h4>
+
+<li>Designing my dream home</li>
+<li>Managing my home project</li>
+ <li>   Delivery and installation</li>
+   <li> Paying for my home interiors</li>
+</ul>
+</div> -->
+<div class="right">
+<ul>
+<img src="payments_v1_1.webp" style="width: 100px; height:auto" alt="">
+<h4>Payments</h4>
+
+<li>Payment methods</li>
+<li>Transaction security guarantee</li>
+<li>Transaction failures</li>
+<li>Execution stages as per type of order</li>
+</ul>
+</div>
+<div class="left">
+<ul>
+<img src="emi_v1_1.webp" style="width: 100px; height:auto" alt="">
+<h4>EMI Options</h4>
+
+<li>Easy EMIs</li>
+
+</ul>
+</div>
+<div class="center">
+<ul>
+<img src="cancellation_v1_1.webp" style="width: 100px; height:auto" alt="">
+<h4>Cancellations</h4>
+
+<li>Cancellations</li>
+<li>FAQs</li>
+
+</ul>
+</div>
+<div class="right">
+<ul>
+<img src="return_exchange_refund_v1_1.webp" style="width: 100px; height:auto" alt="">
+<h4>Return, Exchange & Refund</h4>
+
+<li>Return, Exchange & Refund</li>
+<li>Delay Penalty</li>
+
+</ul>
+</div>
+<div class="left">
+<ul>
+<img src="warranty_v1_1.webp" style="width: 100px; height:auto" alt="">
+<h4>TSI Warranty</h4>
+
+<li>With Livspace, design without any worries, always.</li>
+<li>FAQs</li>
+<li>Modular systems</li>
+<li>Furniture</li>
+</ul>
+</div>
+<div class="center">
+<ul>
+<img src="care_instruction_v1_1.webp" style="width: 100px; height:auto" alt="">
+<h4>Care Instructions</h4>
+<li>Care Instructions for your TSI Home</li>
+</ul>
+</div>
+<div class="right">
+<ul>
+<img src="designing_with_livspace_v1_1.webp" style="width: 100px; height:auto" alt="">
+<h4>Becoming a Design Partner</h4>
+<li>Partnering with TSI</li>
+<li>Designing & earning</li>
+<li>Delivery & installation</li>
+</ul>
+</div>
+<div class="left">
+<ul>
+<img src="reseller_agreement_v1_1.webp" style="width: 100px; height:auto" alt="">
+<h4>Reseller Arrangement</h4>
+<li>Reseller Arrangement</li>
+<li>Consideration</li>
+<li>Invoice and Payment</li>
+<li>Taxes</li>
+<li>Roles and Responsibilities</li>
+</ul>
+</div>
+<div class="center">
+<ul>
+<img src="grievance_v1_1.webp" style="width: 100px; height:auto" alt="">
+<h4>Grievance</h4>
+<li>Customer Grievance Portal</li>
+</ul>
+</div>
+
+<div id="semi-footer" class="container-fluid greyish-bg">
+  <img src="./assets/imgs/banner_desktop.jpg" alt="">
+  <div class=""><h1 class="big-headers  display-5">Your dream home is just a click away </h1>
+    <button class="btn but ">GET STARTED</button>
+  </div>
+ 
+   
+</div>
+
+
+<!-- footer -->
+
+<footer class="footer">
+  <div class="top-sec container">
+    <div><img src="tssi.png" alt="">
+
+    </div>
+    <div class="foot-sec"><div class="row">
+      <div class="col-12"><h5>Company</h5></div>
+    </div>
+    <div class="row">
+      <div class="col-6"><a class="c-color" href="">Press</a></div>
+      <div class="col-6 "><a class="c-color" href="">Terms & Conditions</a></div>
+    </div>
+
+    <div class="row">
+      <div class="col-6"><a class="c-color" href="">How it works</a></div>
+      <div class="col-6"><a class="c-color" href="">Refer a friend</a></div>
+    </div>
+
+    <div class="row">
+      <div class="col-6"><a class="c-color" href="">Careers</a></div>
+      <div class="col-6"><a class="c-color" href="">About us</a></div>
+    </div>
+
+    <div class="row">
+      <div class="col-6"><a class="c-color" href="">Policies</a></div>
+      <div class="col-6"><a class="c-color" href="">Contact us</a></div>
+    </div>
+  </div>
+
+  <div>
+    
+    <div class="row pt-4 mt-4">
+      <div class="col-12"><a class="c-color" href="">FAQ’s</a></div>
+    </div>
+    <div class="row pt-2">
+      <div class="col-12"><a class="c-color" href="">Privacy</a></div>
+    </div>
+  </div>
+    
+  <div>
+    <div class="row text-left">
+      <div class="col-12 p-0"><h5>Get in touch</h5></div>
+    </div>
+    <div class="row pt-2 d-flex flex-column"> <div>Call us</div>
+  <div><a class="c-color" href="">+91 9148 484 666</a> </div>
+</div>
+
+<div class="row pt-2 d-flex flex-column"> <div> Email Us</div>
+<div><a class="c-color" href="">hr@thoughtstream.com </a></div>
+</div>
+  </div>
+
+  </div>
+
+  <hr class="style-one">
+  <div class="bottom-sec container d-flex align-items-center justify-content-around">
+    <div>© 2020 https://thoughtsstream.com/ All Rights Reserved</div>
+<!-- <div class="right">
+<ul>
+<img src="policies/become_design_partner_v1_1.webp" style="width: 100px; height:auto" alt="">
+<h4>Cookie Policy</h4>
+<li>Background</li>
+<li>Types of Cookies</li>
+
+</ul>
+</div> -->
+    
+</body>
+</html>

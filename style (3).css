@@ -1,0 +1,47 @@
+.nav{
+    margin-top: 40px;
+}
+
+
+.nav-link{
+    color: black;
+  }
+  
+  .nav-link:hover,
+  .nav-link.active{
+      color: rgb(21, 166, 233);
+      text-decoration: underline;
+  }
+  
+  .row{
+      font-size: 20px;
+      
+  }
+  
+  
+  .card{
+      /* border-radius: 30px; */
+      cursor: pointer;
+      overflow: hidden;
+  }
+  
+  .card-img-top:hover{
+      transition: 0.5s all ease-in-out;
+      transform: scale(1.1);
+  }
+  
+  .card-button{
+      border-radius: 50px;
+      background-color: white;
+      border: 2px solid rgb(75,198,255);
+      font-size: 1rem;
+      padding: 10px;
+  }
+  
+  .card-button:hover{
+      background-color: rgb(221, 232, 236);;
+  }
+  
+  
+  
+  

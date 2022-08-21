@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AboutUs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="master.css">
+    <style>
+      body {
+    font-family: "Trirong", serif;
+  }
+  h1 {
+    position: absolute;
+    padding-top: auto;
+    padding-bottom: auto;
+    padding-left: 45%;
+  }
+.big{
+    font-size: 50px;
+  }
+  
+ 
+  
+  .big-headers{
+    font-family: 'Baloo Tamma 2', cursive;
+    font-weight: 700;
+    font-size: 40px;
+    color: #41303e;
+  }
+
+
+.container {
+    position: static;
+    text-align: center;
+    color: black;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+  }
+ 
+.dropdown-item:hover{
+    color: green;
+}
+  
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);}
+
+.contact{
+    float: left;    
+    margin: 0 15px 0 0;
+    display: flex;
+
+}
+.contact1{
+    position: center;
+   padding-left: 10%;
+    left: 50%;
+    display: flex;
+   
+    /* margin-bottom: 50%; */
+
+}
+
+.contact3{
+    position: center;
+   padding-left: 10%;
+    left: 50%;
+    /* margin-bottom: 50%; */
+   
+    display: flex;
+
+}
+
+.contact2{
+    position: center;
+   padding-left: 10%;
+    left: 50%;
+    /* margin-bottom: 50%; */
+    display: flex;
+
+}
+
+.contactimg1{
+    width: 30%;
+    height: auto;
+}
+
+.contactimg2{
+    width: 30%;
+    height: auto;
+}
+
+.contactimg3{
+    width: 30%;
+    height: auto;
+}
+.row {
+  height: 100vh;
+}
+.form {
+  background:  #ffffff; 
+  border-radius:  4px; 
+  box-shadow:  0px 2px 6px -1px rgba(0,0,0,.12);
+}
+.image img {
+  width: 220px;
+  height: auto;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.my-form {
+  padding: 2.5rem;
+}
+.my-form h4 {
+  color: #92aad0;
+}
+.my-form p {
+  font-size: .875rem;
+  font-weight: 400;
+}
+.btn {
+  background-color: #92aad0;
+  right: 0;
+}
+.btn:hover, .btn:active, .btn:focus {
+  color: #fff;
+}
+a {
+  bottom: 0;
+}
+.space {
+  padding-bottom: 4rem;
+}
+.link {
+  font-size: .875rem;
+  float: right;
+  color: #6582B0;
+}
+.link:hover, .link:active {
+  color: #426193;
+}
+@-webkit-keyframes autofill {
+  to {
+    color: #666;
+    background: transparent; } }
+
+@keyframes autofill {
+  to {
+    color: #666;
+    background: transparent; } }
+    body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box;}
+    
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+    
+    input[type=submit] {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+input:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.avatar{
+
+  border-radius: 2rem; 
+margin-left: 2rem;
+margin-bottom: auto;
+}
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.wrapper{
+  margin-top: 50px;
+}
+
+.wrapper h1{
+  font-family: 'Allura', cursive;
+  font-size: 52px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.team{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.team .team_member{
+  background: #fff;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  color: #8e8b8b;  
+  position: relative;
+}
+
+.team .team_member h3{
+  color: #81c644;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.team .team_member p.role{
+  color: #ccc;
+  margin: 12px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.team .team_member .team_img{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.team .team_member .team_img img{
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	font-family: 'Fira Sans', sans-serif;
+}
+
+.section-contact {
+	min-height: 100vh;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-image: linear-gradient(175deg, #EEE 50%, #FF9FDB 50%, #9B75D7);
+
+		@media (min-width: 1024px) {
+			padding-left: 128px;
+			padding-right: 128px;
+		}
+
+}
+
+		form {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-gap: 16px;
+			background-color: #FFF;
+			padding: 32px;
+			border-radius: 16px;
+			box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+
+			@media (min-width: 768px) {
+				grid-template-columns: repeat(2, 1fr);
+			}
+
+    }
+
+
+    
+    </style>
+</head>
+<body>
+    <nav id="mynavbar"class="navbar  navbar-light fixed-top navbar-expand-md  py-0 sticky position:sticky">
+        <a href="https://thoughtsstream.com/" class="navbar-brand"> <img id="logo" src="tssi.png" width="30dp" alt="Thoughtsstream Innovations"></a>
+        <button aria-label="toggle-navbar" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navlinks" name="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse h-100 align-items-center" id="navlinks">
+          <ul class="navbar-nav w-100 h-100 align-items-center ml-2">
+            <li id="looks" class="nav-item dropdown h-100  " >
+               <a class="nav-link  h-100" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Design Ideas
+              </a>
+              
+            </li>
+            <li class="nav-item " >
+              <a href="howitworks.html" class="nav-link">How it works</a>
+            </li>
+            <li id="offering" class="nav-item dropdown h-100 " >
+              <a class="nav-link  h-100   " href="offering.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Offering
+              </a>
+    
+            </li>
+            <li class="nav-item ">
+              <a href="tsihomes.html" class="nav-link">TSI Homes</a>
+            </li >
+            <li id="dm" class="nav-item dropdown h-100  ">
+          <a class="nav-link dropdown-toggle h-100   " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            More
+          </a>
+          <div class="dropdown-menu mt-0 flex-column border-0 sub-menu"  aria-labelledby="navbarDropdown">
+            <a class="dropdown-item mt-4 ditem" href="visitus.html">Visit us</a>
+            <a class="dropdown-item mt-4  ditem" href="aboutus.html">About us</a>
+            <a class="dropdown-item mt-4  ditem" href="contact.html">Contact us</a>
+            <a class="dropdown-item mt-4  ditem" href="policies.html">Policies</a>
+    
+    
+          </div>
+        </li>
+            <li class="nav-item ml-5 ">
+              <a href="form.html">
+                <button type="button" class="btn but" name="button"> CONSULT ONLINE NOW</button>
+              </a>
+            </li >
+            
+          </ul>
+          
+        </div>
+    
+    
+      </nav>
+
+
+
+      <div class="max-w-full max-h-full w-auto h-auto align-middle   loaded">
+        <img src="modern-style-kitchen-interior-design-with-dark-blue-wall-3d-rendering.jpg" class="img-banner" alt="About Us Banner" 
+        style="width:100%; height: 70%; opacity: 2px;">
+        
+        <div class="centered" style="font-size: 30px ;color: lightgoldenrodyellow; font-family:'Times New Roman', Times, serif; text-align: center;"><b>Need Help? </b><br>
+          <!-- <b style="text-align: center;">About Us</b><br> -->
+          We are Bangalore based Interior design company having our offshore branch at Toronto, Canada. Having global presence in Berlin and USA</div>
+      </div>
+     <br><br>
+
+<div class="red-tape absolute align-center">
+  
+  <h1>How It Started</h1>
+</div>
+  
+  <br><br><br>
+    <section>
+      <div class="contact1">
+        <img src="interior1.jpg" alt="Bangalore" class="contactimg2">
+        <div class="text-center"> <br><br><b>Bangalore</b>
+          <div class=" padding: 25px 50px 75px 100px;">
+          
+            <div style="padding: 25px 50px 75px 100px; line-height: 0.7;" ;>
+          <p>THOGHTSSTREAM INNOVATION PRIVATE LIMITED</p><p> II STAGE, II CROSS, BTM LAYOUT, BANGALORE 560076, </p>
+          <div>
+          Email at:  <a href="mailto:hr@thoughtsstream.com">hr@thoughtsstream.com</a>
+          
+          Tel: <a href="tel:+919148537151">+919148537151</a></div>   
+      </div>
+    </div>
+  </div>
+          </div>
+        </section>
+<br>
+          <section >
+      <div class="contact2">
+        <img src="interior2.jpg" alt="Berlin" class="contactimg2">
+        <div class="text-center"><br><br> <b>Berlin</b>
+          <div style="padding: 25px 50px 75px 100px;line-height: 0.7;" ;>
+          <p>23RD SHEPPARD AVENUEEAST TORONTO M2N 0C8, </p>
+          <div>
+          Email at:  <a href="mailto:hr@thoughtsstream.com">hr@thoughtsstream.com</a>
+          
+          Tel: <a href="tel:+16479788314">+16479788314</a></div>   
+      </div>
+      </div>
+    </div>
+    </section>
+<br>
+  <section>
+      <div class="contact3">
+        <img src="interior3.jpg" alt="Canada" class="contactimg2">
+        <div class="text-center"> <br><br><b>Canada</b>
+          <div style="padding: 25px 50px 75px 100px;line-height: 0.7;" ;>
+          <p>ALFRED-JUNG_STR 12, BERLIN 10369N GERMANY, </p>
+          <div>
+          Email at:  <a href="mailto:hr@thoughtsstream.com">hr@thoughtsstream.com</a>
+          
+          Tel: <a href="tel:+4917620548589">+4917620548589</a></div>   
+      </div>
+      </div>
+    </div>
+    </section>
+    <br><br>
+
+
+    
+    <div class="wrapper">
+  
+      <div class="team">
+        <div class="team_member">
+          <div class="team_img">
+            <img src="cheerful-indian-businessman-smiling-closeup-portrait-jobs-career-campaign.jpg" alt="Team_image" style="border-radius: 50%;">
+          </div>
+          <h3>Mani Jangde</h3>
+          <p class="role">CEO</p>
+          <p>A dreamer and a chess master of the startup world, Mani always keeps you guessing about his next move. With years of experience in leading worldwide product marketing functions and a deep knowledge of consumers, he uses his expertise to lead TSI.
+          </p>
+        </div>
+        <div class="team_member">
+          <div class="team_img">
+            <img src="lifestyle-beauty-fashion-people-emotions-concept-young-asian-female-office-manager-ceo-with-pleased-expression-standing-white-background-smiling-with-arms-crossed-chest.jpg" alt="Team_image" style="border-radius: 50%;">
+          </div>
+          <h3>Trishala</h3>
+          <p class="role">Support Lead</p>
+          <p>Swati has worked as the Global Head of Product Marketing for the e-commerce team at Google. She completed her bachelors degree from Aayojon School Of Architecture and received his MBA from London Business School..</p></div>
+        <div class="team_member">
+          <div class="team_img">
+            <img src="smiling-young-man-white-shirt-260nw-423487681.webp" alt="Team_image" style="border-radius: 50%;">
+          </div>
+          <h3>Bhawani Singh</h3>
+          <p class="role">Mentor</p>
+          <p>With a mind that runs on logic and data, Bhawani is the most inimitable problem solver you will ever meet. He brings his 12 years of experience in e-commerce, general management, internet technologies, product development and digital marketing to innovate technology at TSI.</p>
+        </div>
+      </div>
+    </div>
+    <form>
+      
+      <div class="form-group">
+        <h3 style="text-align: center;"> Contact Form</h3>
+        <label for="firstname">First name*</label>
+        <input 
+          type="text" 
+          name="firstname" 
+          id="firstname" 
+          required 
+          class="form-element"
+          placeholder="First Name" />
+      </div>
+      <div class="form-group">
+        <label for="lastname">Last name*</label>
+        <input type="text" name="lastname" id="lastname" required class="form-element" placeholder="Last Name" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email address*</label>
+        <input type="email" name="email" id="email" required class="form-element" placeholder="tsi@example.com" />
+      </div>
+      <div class="form-group">
+        <label for="company">Company</label>
+        <input type="text" name="company" id="company" class="form-element" placeholder="tsi@example.com" />
+      </div>
+      <div class="form-group full">
+        <label for="message">What are you looking for?</label>
+        <textarea name="message" id="message" class="form-element" placeholder="I want a website please..."></textarea>
+      </div>
+      <div class="submit-group">
+        <input type="submit" value="SEND MESSAGE" />
+      </div>
+    </form>
+      <!-- footer -->
+      <!-- <footer class="footer">
+        <div class="top-sec container">
+          <div><img src="tssi.png" alt="">
+      
+          </div>
+          <div class="foot-sec"><div class="row">
+            <div class="col-12"><h5>Company</h5></div>
+          </div>
+          <div class="row">
+            <div class="col-6"><a class="c-color" href="">Press</a></div>
+            <div class="col-6 "><a class="c-color" href="">Terms & Conditions</a></div>
+          </div>
+      
+          <div class="row">
+            <div class="col-6"><a class="c-color" href="howitworks.html">How it works</a></div>
+            <div class="col-6"><a class="c-color" href="">Refer a friend</a></div>
+          </div>
+      
+          <div class="row">
+            <div class="col-6"><a class="c-color" href="">Careers</a></div>
+            <div class="col-6"><a class="c-color" href="aboutus.html">About us</a></div>
+          </div>
+      
+          <div class="row">
+            <div class="col-6"><a class="c-color" href="policies.html">Policies</a></div>
+            <div class="col-6"><a class="c-color" href="contact.html">Contact us</a></div>
+          </div>
+        </div>
+      
+        <div>
+          
+          <div class="row pt-4 mt-4">
+            <div class="col-12"><a class="c-color" href="">FAQ’s</a></div>
+          </div>
+          <div class="row pt-2">
+            <div class="col-12"><a class="c-color" href="">Privacy</a></div>
+          </div>
+        </div>
+          
+        <div>
+          <div class="row text-left">
+            <div class="col-12 p-0"><h5>Get in touch</h5></div>
+          </div>
+          <div class="row pt-2 d-flex flex-column"> <div>Call us</div>
+        <div><a class="c-color" href="">+91 9148 484 666</a> </div>
+      </div>
+      
+      <div class="row pt-2 d-flex flex-column"> <div> Email Us</div>
+      <div><a class="c-color" href="">hr@thoughtstream.com </a></div>
+      </div>
+        </div>
+      
+        </div>
+      
+        <hr class="style-one">
+        <div class="bottom-sec container d-flex align-items-center justify-content-around">
+          <div>© 2020 https://thoughtsstream.com/ All Rights Reserved</div>
+          
+         
+        </div>
+      </footer> -->
+</body>
+</html>

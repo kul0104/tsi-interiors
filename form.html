@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+    .container{
+      background-color:  rgb(129, 215, 255);
+    }
+    </style>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+   
+
+    
+    <div class="container">
+      <br />
+      <h1 class="text-success text-center">Talk to a Designer</h1>
+      <div class="col-lg-8 m-auto d-block">
+        <form onsubmit=" sendEmail() ; ">
+          <div class="form-group">
+            <label>Username:</label>
+            <input
+              type="text"
+              name="user"
+              class="form-control"
+              id="user"
+              autocomplete="off"
+              placeholder="Enter Your Name"
+            />
+            <span id="username" class="text-danger font-weight-bold"></span>
+          </div>
+
+          <div class="form-group">
+            <label>Email Id:</label>
+            <input
+              type="text"
+              name="Email"
+              class="form-control"
+              id="email"
+              autocomplete="off"
+              placeholder="Enter Your Email"
+            />
+            <span id="emailid" class="text-danger font-weight-bold"></span>
+          </div>
+
+          <div class="form-group">
+            <label>Phone:</label>
+            <input
+              type="text"
+              name="Phone"
+              class="form-control"
+              id="phone"
+              autocomplete="off"
+              placeholder="Enter Your Number"
+            />
+            <span id="mobileno" class="text-danger font-weight-bold"></span>
+          </div>
+
+          <div class="form-group">
+            <label>Location:</label>
+            <input
+              type="text"
+              name="Location"
+              class="form-control"
+              id="location"
+              autocomplete="off"
+              placeholder="Enter Your Location"
+            />
+            <span id="locationof" class="text-danger font-weight-bold"></span>
+          </div>
+          <input
+            type="submit"
+            name="submit"
+            value="submit"
+            class="btn btn-success"
+          />
+        </form>
+      </div>
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail(){
+        Email.send({
+    Host : "smtp.gmail.com",
+    Username : "kuldeepvaishnav2312@gmail.com",
+    Password : "B0FD494986C1047A3FC6F007E38C731D451E",
+    To : 'kuldeepvaishnav0104@gmail.com',
+    From : document.getElementById("email").value ,
+    Subject : "New Contact Form Enquiry",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+      }
+    </script>
+    <script type="text/javascript">
+      function validation() {
+        var user = document.getElementById("user").value;
+        var Email = document.getElementById("email").value;
+        var Phone = document.getElementById("phone").value;
+        var Location = document.getElementById("location").value;
+
+        if (user == "") {
+          document.getElementById("username").innerHTML =
+            "Please fill the username";
+          return false;
+        }
+        if((user.length <= 2) ||(user.length > 20)){
+            document.getElementById("username").innerHTML =
+            "User length must be between 2 and 20";
+          return false;
+        }
+        if(!isNaN(user)){
+            document.getElementById("username").innerHTML =
+            "only characters are allowed";
+          return false;
+        }
+
+          if (Email == "") {
+          document.getElementById('emailid').innerHTML =
+            "Please fill the Email";
+          return false;
+          }
+          if(Email.indexOf('@') <= 0){
+            document.getElementById('emailid').innerHTML =
+            "@ Invalid position";
+          return false;
+          }
+          if((Email.charAt(Email.length-4)!='.') && (Email.charAt(Email.length-3)!='.'))
+          {
+            document.getElementById('emailid').innerHTML =
+            "Invalid position";
+          return false;
+          }
+
+
+          if (Phone == "") {
+          document.getElementById('mobileno').innerHTML =
+            "Please fill the Phone number ";
+          return false;
+          }
+          if(isNaN(Phone)){
+            document.getElementById('mobileno').innerHTML =
+            "Only numbers are allowed";
+          return false;
+          }
+          if(Phone.length!=10){
+            document.getElementById('mobileno').innerHTML =
+            "Mobile Number must be of 10 digits only";
+          return false;
+          }
+
+          if (Location == "") {
+          document.getElementById('locationof').innerHTML =
+            "Please fill the Location";
+          return false;
+        }
+      }
+        
+    </script>
+  </body>
+</html>

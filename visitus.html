@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kid's Room Design</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <title>Visitus</title>
+    <!-- <link rel="stylesheet" href="master.css"> -->
+    <link rel="stylesheet" href="visitus.css">
+    <style>
+          body {
+        color: #41303e;
+        padding-top: 74px;
+        overflow-x: hidden;
+        font-family: Roboto, sans-serif;
+        background-color: white;
+    }
+    
+    #logo {
+        width: 170px;
+        height: 170px
+    }
+    
+    #mynavbar {
+        font-size: 1.1rem;
+        background-color: white;
+        min-height: 40px;
+        height: 80px;
+        padding-left: 30px;
+        padding-right: 30px;
+        box-shadow: 2px 1px 5px #b8b8b8;
+    }
+    
+    #mynavbar .nav-item {
+        margin-left: 0.7rem;
+    }
+    
+    #mynavbar .nav-link {
+        color: black;
+    }
+    
+    .c-color {
+        transition: all 0.3s ease;
+    }
+    
+    .c-color:hover {
+        color: rgb(75, 198, 255);
+        text-decoration: none;
+    }
+    
+    #mynavbar .nav-link {
+        transition: 0.3s;
+    }
+    
+    #mynavbar .nav-link:hover {
+        color: rgb(75, 198, 255);
+    }
+    
+    #mynavbar .navbar-nav {
+        height: auto;
+    }
+    
+    .dropdown:hover {
+        color: rgb(75, 198, 255);
+    }
+    
+    .d-img {
+        border-radius: 4%;
+        width: 200px;
+        height: 113px;
+    }
+    
+    #offering>.dropdown-menu {
+        visibility: hidden;
+        opacity: 0;
+        display: flex;
+        border-radius: 0;
+        position: absolute;
+        width: 470px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    #offering:hover>.dropdown-menu {
+        visibility: visible;
+        opacity: 1;
+        transition-duration: 0.4s;
+        transition-property: all;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0.1;
+    }
+    
+    #looks>.dropdown-menu {
+        visibility: hidden;
+        opacity: 0;
+        display: flex;
+        border-radius: 0;
+        position: absolute;
+        width: 1128px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    #looks:hover>.dropdown-menu {
+        visibility: visible;
+        opacity: 1;
+        transition-duration: 0.4s;
+        transition-property: all;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0.1;
+    }
+    
+    #dm>.dropdown-menu {
+        visibility: hidden;
+        opacity: 0;
+        display: flex;
+        border-radius: 0;
+        position: absolute;
+        justify-content: start;
+        width: 260px;
+        font-size: 1.1rem;
+    }
+    
+    #dm:hover>.dropdown-menu {
+        visibility: visible;
+        opacity: 1;
+        transition-duration: 0.4s;
+        transition-property: all;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0.1;
+    }
+    
+    .ditem:hover {
+        background-color: white;
+        border-left: 4px solid rgb(75, 198, 255);
+        ;
+    }
+    
+    .dropdown-items {
+        padding: 20px;
+    }
+    
+    .but {
+        border-radius: 24px;
+        color: white;
+        padding: 9px 36px;
+        font-size: 13px;
+        font-weight: 600;
+        background-color: rgb(75, 198, 255);
+        outline: none;
+    }
+    
+    #navbarDropdown {
+        padding-top: 28px;
+        transition: 0.3s;
+    }
+    #semi-footer {
+        height: 450px;
+        padding: 0;
+        position: relative;
+    }
+    
+    #semi-footer div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        top: 170px;
+        left: 50vh;
+    }
+    
+    #semi-footer img {
+        width: 100%;
+    }
+    
+    #semi-footer small {
+        color: #b8b8b8;
+        position: relative;
+        top: 20px;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+    }
+    
+    #semi-footer a {
+        color: rgb(75, 198, 255);
+        position: relative;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+    }
+    /* footer */
+    
+    .footer {
+        font-size: 14px;
+        color: white;
+        background-color: #41303e;
+    }
+    
+    .footer a {
+        color: white;
+    }
+    
+    .footer .top-sec {
+        padding-bottom: 60px;
+        padding-top: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .footer .top-sec img {
+        width: 200px;
+    }
+    
+    .footer .top-sec svg {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .logs {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .foot-sec {
+        width: 280px;
+    }
+    
+    .foot-sec .row {
+        padding-top: 10px;
+    }
+    
+    hr.style-one {
+        margin-bottom: 0;
+        border: 0;
+        height: 1px;
+        background: black;
+        background-image: linear-gradient(to right, rgb(99, 99, 99), rgb(99, 99, 99), rgb(153, 153, 153));
+    }
+    
+    .bottom-sec {
+        justify-content: space-around;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .country {
+        margin-left: auto;
+        margin-right: 5px;
+    }
+    
+    .ind {
+        padding: 5px 10px;
+        border-radius: 50px;
+        border: 2px solid rgb(75, 198, 255);
+    }
+    
+    .ind img {
+        margin-right: 5px;
+        width: 30px;
+    }
+    
+    .SG {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .SG img {
+        margin-right: 5px;
+        width: 30px;
+    }
+    </style>
+</head>
+<body>
+    <nav id="mynavbar"class="navbar  navbar-light fixed-top navbar-expand-md  py-0 sticky position:sticky">
+        <a href="https://thoughtsstream.com/" class="navbar-brand"> <img id="logo" src="tssi.png" width="30dp" alt="Thoughtsstream Innovations"></a>
+        <button aria-label="toggle-navbar" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navlinks" name="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse h-100 align-items-center" id="navlinks">
+          <ul class="navbar-nav w-100 h-100 align-items-center ml-2">
+            <li id="looks" class="nav-item dropdown h-100  " >
+               <a class="nav-link  h-100" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Design Ideas
+              </a>
+              
+            </li>
+            <li class="nav-item " >
+              <a href="howitworks.html" class="nav-link">How it works</a>
+            </li>
+            <li id="offering" class="nav-item dropdown h-100 " >
+              <a class="nav-link  h-100   " href="offering.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Offering
+              </a>
+    
+            </li>
+            <li class="nav-item ">
+              <a href="tsihomes.html" class="nav-link">TSI Homes</a>
+            </li >
+            <li id="dm" class="nav-item dropdown h-100  ">
+          <a class="nav-link dropdown-toggle h-100   " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            More
+          </a>
+          <div class="dropdown-menu mt-0 flex-column border-0 sub-menu"  aria-labelledby="navbarDropdown">
+            <a class="dropdown-item mt-4 ditem" href="visitus.html">Visit us</a>
+            <a class="dropdown-item mt-4  ditem" href="aboutus.html">About us</a>
+            <a class="dropdown-item mt-4  ditem" href="contact.html">Contact us</a>
+            <a class="dropdown-item mt-4  ditem" href="policies.html">Policies</a>
+    
+    
+          </div>
+        </li>
+            <li class="nav-item ml-5 ">
+              <a href="form.html">
+                <button type="button" class="btn but" name="button"> CONSULT ONLINE NOW</button>
+              </a>
+            </li >
+            
+          </ul>
+          
+        </div>
+    
+      </nav>
+
+
+
+      <div class="container">
+        <img src="./empty-flat-interrior-with-elements-decoration.jpg" class="img-banner" alt="About Us Banner" style=" width: 100%; height: 40%;">
+        
+        <div class="centered" style="font-family: fantasy; font-size: 1.8rem;"><br><br>
+            <a href="index.html"><h1 style="font-size:150px;">VisitUs</h1></a>
+          </div>
+      </div>
+      <br>
+        <section>
+          <h1 class="text-center " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">TSI Experience Centres</h1>
+          <p class="text-center" style="size: 40px;">Experience the comfort and aesthetics of a tsihomes before you get yours! With looks for every<br> room, furniture for each corner, material samples on display, and a dedicated interior designer to take <br>you through it, your quest for the best home interiors ends here. And it is ready and safe for your visit.</p>
+        </section>
+    
+        <br><br>
+        
+        <section id="about" class="about container">
+          <div class="card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+            <div class="col-md-6 image" style="text-align:center">
+              <img src="christian-werther-h6MXPgjjCqg-unsplash.jpg"
+              style="width: 300px; height: 337px"; alt="" >
+            </div>
+            <br>
+            <div class="flip-card-back col-md-6 info" style="text-align: center; font-size: 15px;">
+              <h2 style="font-size: 30px;">The best Interior Design in the city</h2>
+              <p>Take a walkthrough of beautifully designed bedrooms, living rooms, modular kitchens and everything in between.</p>
+            </div>
+          </div>
+          </div>
+          </div>
+          </section>
+        <br>
+    <section id="about" class="about container">
+    
+     
+      
+      <div class="row align-items-center">
+      
+        <div class="col-md-6 image">
+          <img src="eugenivy_now-D0vNleaXIEg-unsplash.jpg"width="600"
+          height="337"
+          style="width: 300px; height: 337px;"  alt="">
+        </div>
+      
+        <div class="col-md-6 info">
+          <h2 style="font-size: 30px;">Experience Our Products</h2>
+          <p>See our wide range of modular products and furniture to make the best choice before you make a purchase.</p>
+         
+        </div>
+      
+      </div>
+      
+      </section>
+      <br>
+      <section id="about" class="about container">
+    
+       
+        
+        <div class="card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+          <div class="col-md-6 image" style="text-align:center">
+            <img src="collov-home-design-H-1j_s0dhCw-unsplash.jpg"
+            style="width: 300px; height: 337px"; alt="" >
+          </div>
+        
+          <div class="flip-card-back col-md-6 info" style="text-align: center;">
+            <h2 style="font-size:30px;">Ensuring a safe experience from design to installation</h2>
+            <p>Building a safer environment for you, our vendors, and our employees is our biggest priority. From following all safety protocols at Experience Centres, warehouses, factories and your new home, to conducting vaccination drives for all our employees, we’re doing everything to ensure a completely safe home interiors experience.</p>
+           
+          </div>
+        </div>
+        </div>
+        
+        </div>
+        
+        </section>
+        <br>
+        
+        <section id="about" class="about container">
+    
+        
+          <div class="row align-items-center">
+          
+            <div class="col-md-6 image">
+              <img src="dsss.webp"width="600"
+              height="337"
+              style="width: 300px; height: 337px;"  alt="">
+            </div>
+          
+            <div class="col-md-6 info">
+              <h2 style="font-size:30px;">Get design consultation</h2>
+              <p>Meet an expert designer, get personalised design consultation for your home and place your order.</p>
+             
+            </div>
+          
+          </div>
+          
+          </section>
+        <!-- about section starts  -->
+      
+    
+       <br><br>
+      <div class="slideshow-container">
+        
+    
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="Check-material_d.webp" style="width:80%">
+          <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="Experience-our-Products_d.webp" style="width:80%">
+          <div class="text">Caption Two</div>
+        </div>
+        
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="Looks-for-each-room_d.webp" style="width:80%">
+          <div class="text">Caption Three</div>
+          
+     
+      </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        
+        <script src="./script.js"></script>
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="top-sec container">
+          <div><img src="tssi.png" alt="">
+      
+          </div>
+          <div class="foot-sec"><div class="row">
+            <div class="col-12"><h5>Company</h5></div>
+          </div>
+          <div class="row">
+            <div class="col-6"><a class="c-color" href="">Press</a></div>
+            <div class="col-6 "><a class="c-color" href="">Terms & Conditions</a></div>
+          </div>
+      
+          <div class="row">
+            <div class="col-6"><a class="c-color" href="howitworks.html">How it works</a></div>
+            <div class="col-6"><a class="c-color" href="">Refer a friend</a></div>
+          </div>
+      
+          <div class="row">
+            <div class="col-6"><a class="c-color" href="">Careers</a></div>
+            <div class="col-6"><a class="c-color" href="aboutus.html">About us</a></div>
+          </div>
+      
+          <div class="row">
+            <div class="col-6"><a class="c-color" href="policies.html">Policies</a></div>
+            <div class="col-6"><a class="c-color" href="contact.html">Contact us</a></div>
+          </div>
+        </div>
+      
+        <div>
+          
+          <div class="row pt-4 mt-4">
+            <div class="col-12"><a class="c-color" href="">FAQ’s</a></div>
+          </div>
+          <div class="row pt-2">
+            <div class="col-12"><a class="c-color" href="">Privacy</a></div>
+          </div>
+        </div>
+          
+        <div>
+          <div class="row text-left">
+            <div class="col-12 p-0"><h5>Get in touch</h5></div>
+          </div>
+          <div class="row pt-2 d-flex flex-column"> <div>Call us</div>
+        <div><a class="c-color" href="">+91 9148 484 666</a> </div>
+      </div>
+      
+      <div class="row pt-2 d-flex flex-column"> <div> Email Us</div>
+      <div><a class="c-color" href="">hr@thoughtstream.com </a></div>
+      </div>
+        </div>
+      
+        </div>
+      
+        <hr class="style-one">
+        <div class="bottom-sec container d-flex align-items-center justify-content-around">
+          <div>© 2020 https://thoughtsstream.com/ All Rights Reserved</div>
+          
+         
+        </div>
+      </footer>
+      <script>
+        let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+      </script>
+</body>
+</html>
